@@ -1,0 +1,29 @@
+===== Loaded Data (Head) =====
+   participant     condition  digit_span
+0            1  instrumental           5
+1            1           pop           5
+2            1       silence           6
+3            1    whitenoise           4
+4            2  instrumental           7
+
+===== Descriptive Statistics =====
+              count      mean       std  min  25%  50%  75%  max
+condition                                                       
+instrumental   13.0  4.769231  0.832050  4.0  4.0  5.0  5.0  7.0
+pop            13.0  4.461538  1.265924  3.0  4.0  4.0  5.0  8.0
+silence        13.0  5.615385  1.192928  3.0  5.0  6.0  6.0  8.0
+whitenoise     13.0  4.307692  0.751068  3.0  4.0  4.0  5.0  6.0
+
+===== Repeated-Measures ANOVA (One-Way) =====
+      Source         SS  DF        MS         F     p-unc       ng2       eps
+0  condition  13.288462   3  4.429487  6.944724  0.000832  0.205471  0.721395
+1      Error  22.961538  36  0.637821       NaN       NaN       NaN       NaN
+
+===== Post-Hoc Pairwise Comparisons =====
+    Contrast             A           B  Paired  Parametric         T   dof alternative     p-unc    p-corr p-adjust    BF10    hedges
+0  condition  instrumental         pop    True        True  1.171080  12.0   two-sided  0.264296  0.528592     holm   0.492  0.278174
+1  condition  instrumental     silence    True        True -2.856099  12.0   two-sided  0.014458  0.072291     holm   4.295 -0.796772
+2  condition  instrumental  whitenoise    True        True  2.143769  12.0   two-sided  0.053232  0.159696     holm   1.539  0.563925
+3  condition           pop     silence    True        True -2.738613  12.0   two-sided  0.017977  0.072291     holm   3.605 -0.908486
+4  condition           pop  whitenoise    True        True  0.519291  12.0   two-sided  0.613002  0.613002     holm   0.313  0.143143
+5  condition       silence  whitenoise    True        True  3.770028  12.0   two-sided  0.002672  0.016030     holm  17.272  1.270475
