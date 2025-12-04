@@ -8,7 +8,7 @@ Participants completed the task under four conditions, and the resulting data we
 ## Repository Structure
 
 ```bash
-project/
+performance-noise-analysis/
 │
 ├── data/                       # Participants test results
 │   ├── participant_1/
